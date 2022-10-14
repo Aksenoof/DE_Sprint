@@ -2,7 +2,7 @@
 
 x = input()
 
-def check(s):
+def check_validity_bracket(s):
     left1 = []
     left2 = []
     left3 = []
@@ -27,8 +27,8 @@ def check(s):
                 right3 = right3 + ['}']
 
     if (len(left1) == len(right1)) and (len(left2) == len(right2)) and (len(left3) == len(right3)):
-        return 'True'
+        return True
     else:
-        return 'False'
+        return False
 
-print(check(x))
+print(check_validity_bracket(x))

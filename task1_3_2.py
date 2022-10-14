@@ -1,8 +1,12 @@
 #Палиндром строки
 x = str(input())
-x = ''.join(x.split())
-a = x[::-1]
-if x == a:
-  print("yes")
-else:
-  print("no")
+
+def check_palidrom(s):
+  t = ''.join(s.split())
+  a = t[::-1]
+  if t == a:
+    return True
+  else:
+    return False
+
+print(check_palidrom(x))
